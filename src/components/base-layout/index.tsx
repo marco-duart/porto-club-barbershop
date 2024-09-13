@@ -1,3 +1,4 @@
+import Home from "../../pages/home";
 import Footer from "../footer";
 import Header from "../header";
 import * as S from "./styles";
@@ -7,12 +8,8 @@ const BaseLayout = () => {
     <S.Container>
       <div>
         <Header />
-        <hr />
       </div>
-      <S.ContentSection>
-
-        <hr />
-      </S.ContentSection>
+      <Home />
       <div>
         <Footer />
       </div>

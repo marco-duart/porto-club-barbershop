@@ -21,10 +21,10 @@ const Header = () => {
     <S.HeaderContainer scrollPosition={scrollPosition}>
       <S.Logo src={CONSTANTS.IMAGES.logo} alt="Logo" />
       <S.Nav>
-        <S.NavLink href="#home">Home</S.NavLink>
-        <S.NavLink href="#about">Sobre Nós</S.NavLink>
-        <S.NavLink href="#services">Tabela de preços</S.NavLink>
-        <S.NavLink href="#contact">Contato</S.NavLink>
+        <S.NavLink href="#home">HOME</S.NavLink>
+        <S.NavLink href="#about">SOBRE NÓS</S.NavLink>
+        <S.NavLink href="#services">TABELA DE PREÇOS</S.NavLink>
+        <S.NavLink href="#contact">CONTATO</S.NavLink>
       </S.Nav>
     </S.HeaderContainer>
   );

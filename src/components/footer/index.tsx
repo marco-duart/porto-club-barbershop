@@ -1,4 +1,4 @@
-import * as S from "./style";
+import * as S from "./styles";
 import { Facebook, Instagram, Twitter } from "styled-icons/boxicons-logos";
 
 const Footer = () => {
