@@ -7,7 +7,11 @@ declare module "styled-components" {
       secondary: string;
       tertiary: string;
       text: string;
+      textLight: string;
+      textDark: string;
       background: string;
+      backgroundSecondary: string;
+      border: string;
     },
     fonts: {
       body: string;
