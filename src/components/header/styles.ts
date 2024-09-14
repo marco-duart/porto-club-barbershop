@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header<{ scrollPosition: number }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 5%;
   background-color: ${(props) =>
     props.scrollPosition > 50
       ? `rgba(31, 31, 31, 0.8)` 

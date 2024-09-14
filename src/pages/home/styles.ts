@@ -9,7 +9,7 @@ export const PresentationContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 2rem 5%;
   background-image: url(${CONSTANTS.IMAGES.background0});
   background-size: cover;
   background-position: center;
