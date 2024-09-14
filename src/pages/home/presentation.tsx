@@ -2,7 +2,7 @@ import * as S from "./styles";
 
 const Presentation = () => {
   return (
-    <S.PresentationContainer>
+    <S.PresentationContainer id="home">
     </S.PresentationContainer>
   );
 };

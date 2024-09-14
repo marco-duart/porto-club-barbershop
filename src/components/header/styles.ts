@@ -34,6 +34,7 @@ export const NavLink = styled.a`
   font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
