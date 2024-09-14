@@ -2,8 +2,8 @@ import * as S from "./styles";
 
 const Contact = () => {
   return (
-    <S.Container>
-    </S.Container>
+    <S.ContactContainer>
+    </S.ContactContainer>
   );
 };
 

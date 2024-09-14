@@ -11,7 +11,9 @@ export const HeaderContainer = styled.header<{ scrollPosition: number }>`
   align-items: center;
   padding: 0 20px;
   background-color: ${(props) =>
-    props.scrollPosition > 50 ? props.theme.colors.primary : "transparent"};
+    props.scrollPosition > 50
+      ? `rgba(31, 31, 31, 0.8)` 
+      : "transparent"};
   transition: background-color 0.3s ease-in-out;
   z-index: 1000;
 `;

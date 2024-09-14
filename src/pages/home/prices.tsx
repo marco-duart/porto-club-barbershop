@@ -2,8 +2,8 @@ import * as S from "./styles";
 
 const Prices = () => {
   return (
-    <S.Container>
-    </S.Container>
+    <S.PricesContainer>
+    </S.PricesContainer>
   );
 };
 

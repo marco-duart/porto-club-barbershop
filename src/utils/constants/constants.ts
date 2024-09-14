@@ -1,5 +1,9 @@
 import logo from "../../assets/image/logo.png";
 import logoBlack from "../../assets/image/logo-black.png";
+import background0 from "../../assets/image/background-0.jpg";
+import background1 from "../../assets/image/background-1.jpg";
+import background2 from "../../assets/image/background-2.jpg";
+import background3 from "../../assets/image/background-3.jpg";
 
 const SIZES = {
   mobileS: "320px",
@@ -22,4 +26,8 @@ export const DEVICE = {
 export const IMAGES = {
   logo,
   logoBlack,
+  background0,
+  background1,
+  background2,
+  background3,
 };

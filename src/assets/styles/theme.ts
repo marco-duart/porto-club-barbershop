@@ -2,10 +2,10 @@ import { DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
   colors: {
-    primary: "#1f1f1f",
-    secondary: "#ffc107",
-    text: "#ffffff",
-    background: "#f4f4f4",
+    primary: "#1F1F1F",
+    secondary: " #BB0000",
+    text: "#FFFFFF",
+    background: "#F9F5F2",
   },
   fonts: {
     body: '"Roboto", sans-serif',
