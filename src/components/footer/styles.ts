@@ -36,7 +36,7 @@ export const SocialLink = styled.a`
 export const FooterBottom = styled.div`
   text-align: center;
   padding: 10px 0;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background: linear-gradient(145deg, #f7d54e, #c7971e);;
   color: ${({ theme }) => theme.colors.text};
   font-size: 0.9rem;
 `;

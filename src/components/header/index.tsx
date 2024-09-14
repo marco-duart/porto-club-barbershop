@@ -23,7 +23,7 @@ const Header = () => {
       <S.Nav>
         <S.NavLink href="#home">HOME</S.NavLink>
         <S.NavLink href="#about">SOBRE NÓS</S.NavLink>
-        <S.NavLink href="#services">TABELA DE PREÇOS</S.NavLink>
+        <S.NavLink href="#prices">TABELA DE PREÇOS</S.NavLink>
         <S.NavLink href="#contact">CONTATO</S.NavLink>
       </S.Nav>
     </S.HeaderContainer>

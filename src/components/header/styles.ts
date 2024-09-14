@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header<{ scrollPosition: number }>`
 `;
 
 export const Logo = styled.img`
-  height: 70%;
+  height: 85%;
   cursor: pointer;
 `;
 
@@ -37,5 +37,6 @@ export const NavLink = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 223, 0, 1), 0 0 40px rgba(255, 223, 0, 0.7);
   }
 `;
