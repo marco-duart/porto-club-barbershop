@@ -68,7 +68,7 @@ export const PricesTable = styled(motion.table)`
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
-  @media (max-width: 768px) {
+  @media (${CONSTANTS.DEVICE.tablet}) {
     width: 100%;
     font-size: 14px;
   }
@@ -111,7 +111,7 @@ export const TableData = styled.td`
   font-size: 1rem;
   text-align: left;
 
-  @media (max-width: 768px) {
+  @media (${CONSTANTS.DEVICE.tablet}) {
     padding: 0.5rem;
   }
 `;
@@ -142,7 +142,7 @@ export const ContactContent = styled(motion.div)`
   box-shadow: 0 12px 18px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
 
-  @media (max-width: 768px) {
+  @media (${CONSTANTS.DEVICE.tablet}) {
     flex-direction: column;
     align-items: center;
   }
@@ -158,7 +158,7 @@ export const ContactInfo = styled.div`
   font-size: 1.2rem;
   color: ${(props) => props.theme.colors.textLight};
 
-  @media (max-width: 768px) {
+  @media (${CONSTANTS.DEVICE.tablet}) {
     margin-right: 0;
     margin-bottom: 1rem;
   }
@@ -204,7 +204,7 @@ export const MapContainer = styled.div`
     height: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (${CONSTANTS.DEVICE.tablet}) {
     width: 100%;
     height: 300px;
   }
