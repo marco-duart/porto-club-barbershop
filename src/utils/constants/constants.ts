@@ -4,6 +4,7 @@ import background0 from "../../assets/image/background-0.jpg";
 import background1 from "../../assets/image/background-1.jpg";
 import background2 from "../../assets/image/background-2.jpg";
 import background3 from "../../assets/image/background-3.jpg";
+import background4 from "../../assets/image/background-4.jpg";
 
 const SIZES = {
   mobileS: "320px",
@@ -30,4 +31,5 @@ export const IMAGES = {
   background1,
   background2,
   background3,
+  background4,
 };
