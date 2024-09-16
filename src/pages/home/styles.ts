@@ -23,7 +23,7 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.backgroundSecondary};
   overflow: hidden;
   padding: 2rem 0;
 `;
@@ -48,7 +48,7 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.backgroundSecondary};
   overflow: hidden;
   padding: 2rem 0;
 `;
