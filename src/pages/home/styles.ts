@@ -58,10 +58,11 @@ export const PricesTable = styled.table`
   max-width: 1200px;
   margin: 0 auto;
   border-collapse: collapse;
-  background: #F0E68C;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  background: rgba(34, 34, 34, 0.8);
+  border: 2px solid #DAA520;
+  border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
   @media (max-width: 768px) {
     width: 100%;
@@ -70,13 +71,18 @@ export const PricesTable = styled.table`
 `;
 
 export const TableHeader = styled.thead`
-  background-color: ${(props) => props.theme.colors.primary};
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #DAA520;
 `;
 
 export const TableRow = styled.tr`
   &:nth-child(even) {
-    background-color: #EEE8AA;
+    background-color: rgba(50, 50, 50, 0.6);
+  }
+
+  &:hover {
+    background-color: rgba(218, 165, 32, 0.3);
+    cursor: pointer;
   }
 `;
 
@@ -86,18 +92,18 @@ export const TableHeading = styled.th`
   font-weight: bold;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: ${(props) => props.theme.colors.textLight};
-  border-bottom: 2px solid ${(props) => props.theme.colors.border};
+  color: ${(props) => props.theme.colors.textLight || "#DAA520"};
+  border-bottom: 2px solid ${(props) => props.theme.colors.border || "#DAA520"};
 `;
 
 export const TableBody = styled.tbody`
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text || "#FFFFFF"};
 `;
 
 export const TableData = styled.td`
   padding: 1rem;
-  border-bottom: 1px solid ${(props) => props.theme.colors.border};
-  color: ${(props) => props.theme.colors.textDark};
+  border-bottom: 1px solid ${(props) => props.theme.colors.border || "#DAA520"};
+  color: ${(props) => props.theme.colors.textLight || "#FFFFFF"};
   font-size: 1rem;
   text-align: left;
 
