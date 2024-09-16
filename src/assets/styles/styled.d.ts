@@ -19,4 +19,5 @@ declare module "styled-components" {
       subTitle: string;
       slogan: string;
     },
+  }
 }
