@@ -12,19 +12,82 @@ export const Title = styled(motion.h2)`
   opacity: 0.9;
 `;
 
+// PRESENTATION
 export const PresentationContainer = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  overflow: hidden;
-  padding: 2rem 5%;
-  background-image: url(${CONSTANTS.IMAGES.background0});
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(64, 64, 64, 1) 100%
+  );
+  background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+`;
+
+export const Logo = styled(motion.img)`
+  width: 25%;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 20px rgba(247, 213, 78, 0.7));
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+export const Slogan = styled(motion.h2)`
+  font-family: ${(props) => props.theme.fonts.slogan};
+  color: ${(props) => props.theme.colors.secondary};
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+`;
+
+export const CallToActionButton = styled(motion.button)`
+  font-family: ${(props) => props.theme.fonts.title};
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.primary};
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.tertiary};
+    color: #fff;
+    transform: scale(1.05);
+  }
 `;
 
 // ABOUT
@@ -47,10 +110,20 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  clip-path: polygon(25% 10%, 75% 0%, 75% 90%, 25% 100%);
 
   @media (${CONSTANTS.DEVICE.tablet}) {
     width: 50%;
     height: 100%;
+  }
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 `;
 
@@ -58,10 +131,15 @@ export const AboutImage = styled(motion.img)`
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
   @media (${CONSTANTS.DEVICE.tablet}) {
     height: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
 
@@ -74,10 +152,6 @@ export const ContentWrapper = styled(motion.div)`
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background: rgba(50, 50, 50, 0.8);
-  border: 2px solid #daa520;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
 
   @media (${CONSTANTS.DEVICE.tablet}) {
     width: 50%;
@@ -100,7 +174,9 @@ export const BioTitle = styled(motion.h2)`
 export const Bio = styled.div`
   font-size: 1.2rem;
   color: ${(props) => props.theme.colors.textLight};
+  border: 2px solid #daa520;
   line-height: 1.5;
+  padding: 2rem;
 
   @media (${CONSTANTS.DEVICE.tablet}) {
     font-size: 1rem;

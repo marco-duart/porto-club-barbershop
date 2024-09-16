@@ -9,7 +9,7 @@ export const theme: DefaultTheme = {
     textLight: "#B3B3B3",
     textDark: "#363636",
     background: "#161616",
-    backgroundSecondary: "#2B2B2B",
+    backgroundSecondary: "#404040",
     border: "#4A4A4A",
   },
   fonts: {

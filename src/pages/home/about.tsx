@@ -2,6 +2,7 @@ import * as S from "./styles";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import * as CONSTANTS from "../../utils/constants/constants";
 
 const About = () => {
   const imageControls = useAnimation();
@@ -28,7 +29,7 @@ const About = () => {
         <S.AboutImage
           initial={{ opacity: 0, x: -50 }}
           animate={imageControls}
-          src="link-to-your-image.jpg"
+          src={CONSTANTS.IMAGES.barbershop}
           alt="About Us"
         />
       </S.ImageWrapper>
