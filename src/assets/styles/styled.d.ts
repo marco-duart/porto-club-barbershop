@@ -15,5 +15,8 @@ declare module "styled-components" {
     },
     fonts: {
       body: string;
+      title: string;
+      subTitle: string;
+      slogan: string;
     },
 }

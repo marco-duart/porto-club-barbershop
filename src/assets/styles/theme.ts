@@ -14,5 +14,8 @@ export const theme: DefaultTheme = {
   },
   fonts: {
     body: '"Roboto", sans-serif',
+    title: '"Rye", serif',
+    subTitle: '"Permanent Marker", cursive',
+    slogan: '"Rock Salt", cursive',
   },
 };
