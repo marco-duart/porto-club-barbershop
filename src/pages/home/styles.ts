@@ -134,6 +134,7 @@ export const ContactContent = styled(motion.div)`
   width: 80%;
   max-width: 1200px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   padding: 1rem;
@@ -143,7 +144,7 @@ export const ContactContent = styled(motion.div)`
   backdrop-filter: blur(10px);
 
   @media (${CONSTANTS.DEVICE.tablet}) {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 `;
@@ -193,7 +194,6 @@ export const ContactLink = styled.a`
 
 export const MapContainer = styled.div`
   flex: 1;
-  height: 100%;
   background-color: ${(props) => props.theme.colors.background};
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -206,6 +206,6 @@ export const MapContainer = styled.div`
 
   @media (${CONSTANTS.DEVICE.tablet}) {
     width: 100%;
-    height: 300px;
+    height: 100%;
   }
 `;
