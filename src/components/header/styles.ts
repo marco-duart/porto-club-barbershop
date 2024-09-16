@@ -33,7 +33,7 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
   font-size: .8rem;
-  font-weight: 500;
+  font-weight: 700;
   transition: color 0.2s ease-in-out;
   cursor: pointer;
 

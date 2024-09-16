@@ -39,6 +39,8 @@ export const LINKS = {
   maps: "https://maps.app.goo.gl/ur64xeKzsSq6ULBu9",
   instagram: "https://www.instagram.com/portoclubbarbearia2",
   whatsapp: "https://wa.me/5562982450821",
+  facebook: "",
+  linkedin: "",
   address: "R. Cuiabá, 2242 - Qd. 34, Lt. 04 - Jardim Esmeraldas, Goiânia - GO, 74830-050",
   email: "",
 }

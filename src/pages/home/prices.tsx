@@ -17,13 +17,18 @@ const Prices = () => {
   }, [controls, inView]);
 
   return (
-    <S.PricesContainer id="prices" ref={ref} animate={controls} initial="hidden">
+    <S.PricesContainer
+      id="prices"
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+    >
       <S.Title
         initial={{ opacity: 0, y: 50 }}
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
         }}
       >
         Tabela de Preços
@@ -33,7 +38,11 @@ const Prices = () => {
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1.5, delay: 0.2 },
+          },
         }}
       >
         <S.TableHeader>

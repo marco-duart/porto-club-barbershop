@@ -8,7 +8,7 @@ export const theme: DefaultTheme = {
     text: "#FFFFFF",
     textLight: "#B3B3B3",
     textDark: "#363636",
-    background: "#F9F5F2",
+    background: "#161616",
     backgroundSecondary: "#2B2B2B",
     border: "#4A4A4A",
   },

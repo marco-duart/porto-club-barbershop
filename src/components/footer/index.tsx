@@ -1,19 +1,20 @@
 import * as S from "./styles";
-import { Facebook, Instagram, Twitter } from "styled-icons/boxicons-logos";
+import { Facebook, Instagram, Linkedin } from "styled-icons/boxicons-logos";
+import * as CONSTANTS from "../../utils/constants/constants";
 
 const Footer = () => {
   return (
     <S.FooterContainer>
       <S.FooterTop>
         <S.SocialIcons>
-          <S.SocialLink href="https://facebook.com" target="_blank">
+          <S.SocialLink href={CONSTANTS.LINKS.facebook} target="_blank">
             <Facebook />
           </S.SocialLink>
-          <S.SocialLink href="https://instagram.com" target="_blank">
+          <S.SocialLink href={CONSTANTS.LINKS.instagram} target="_blank">
             <Instagram />
           </S.SocialLink>
-          <S.SocialLink href="https://twitter.com" target="_blank">
-            <Twitter />
+          <S.SocialLink href={CONSTANTS.LINKS.linkedin} target="_blank">
+            <Linkedin />
           </S.SocialLink>
         </S.SocialIcons>
       </S.FooterTop>

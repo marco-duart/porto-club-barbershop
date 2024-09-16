@@ -27,16 +27,84 @@ export const PresentationContainer = styled.div`
   background-repeat: no-repeat;
 `;
 
+// ABOUT
 export const AboutContainer = styled.div`
   height: 88vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   background-color: ${(props) => props.theme.colors.backgroundSecondary};
   overflow: hidden;
-  padding: 2rem 0;
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    flex-direction: row;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    width: 50%;
+    height: 100%;
+  }
+`;
+
+export const AboutImage = styled(motion.img)`
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    height: 100%;
+  }
+`;
+
+export const ContentWrapper = styled(motion.div)`
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(50, 50, 50, 0.8);
+  border: 2px solid #daa520;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: 2rem 4rem;
+    align-items: flex-start;
+  }
+`;
+
+export const BioTitle = styled(motion.h2)`
+  font-size: 2rem;
+  font-family: ${(props) => props.theme.fonts.title};
+  color: ${(props) => props.theme.colors.secondary};
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  opacity: 0.9;
+`;
+
+export const Bio = styled.div`
+  font-size: 1.2rem;
+  color: ${(props) => props.theme.colors.textLight};
+  line-height: 1.5;
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    font-size: 1rem;
+  }
 `;
 
 // PRICES
@@ -55,6 +123,22 @@ export const PricesContainer = styled(motion.div)`
   padding: 2rem 0;
   overflow: hidden;
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
 `;
 
 export const PricesTable = styled(motion.table)`

@@ -33,7 +33,7 @@ const Contact = () => {
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
         }}
       >
         Contato
@@ -46,7 +46,7 @@ const Contact = () => {
           visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 1, delay: 0.2 },
+            transition: { duration: 1.5, delay: 0.2 },
           },
         }}
       >
@@ -75,7 +75,7 @@ const Contact = () => {
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { duration: 1, delay: 0.4 },
+                transition: { duration: 1.5, delay: 0.4 },
               },
             }}
           >
