@@ -49,7 +49,7 @@ export const PresentationContainer = styled.div`
 `;
 
 export const Logo = styled(motion.img)`
-  width: 25%;
+  width: 50%;
   height: auto;
   margin-bottom: 1rem;
   filter: drop-shadow(0 0 20px rgba(247, 213, 78, 0.7));
@@ -58,16 +58,25 @@ export const Logo = styled(motion.img)`
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    width: 30%;
+    height: auto;
+  }
 `;
 
 export const Slogan = styled(motion.h2)`
   font-family: ${(props) => props.theme.fonts.slogan};
   color: ${(props) => props.theme.colors.secondary};
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
   letter-spacing: 0.1rem;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    font-size: 2rem;
+  }
 `;
 
 export const CallToActionButton = styled(motion.button)`
@@ -82,6 +91,10 @@ export const CallToActionButton = styled(motion.button)`
   letter-spacing: 0.1rem;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+
+  a {
+    text-decoration: none;
+  }
 
   &:hover {
     background-color: ${(props) => props.theme.colors.tertiary};

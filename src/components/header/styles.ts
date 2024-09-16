@@ -31,7 +31,7 @@ export const NavLink = styled.a<{ isActive: boolean }>`
   color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 500;
   transition: color 0.2s ease-in-out;
   cursor: pointer;
 
@@ -44,6 +44,7 @@ export const NavLink = styled.a<{ isActive: boolean }>`
 
   @media (${CONSTANTS.DEVICE.tablet}) {
     font-size: 1.2rem;
+    font-weight: 700;
   }
 
   ${({ isActive, theme }) =>
