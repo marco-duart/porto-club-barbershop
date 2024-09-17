@@ -75,16 +75,29 @@ const Prices = () => {
           </S.TableRow>
           <S.TableRow>
             <S.TableData>Plano Mensal - Corte</S.TableData>
-            <S.TableData>O plano oferece até 4 cortes, sendo 1 por semana, nas próximas 4 semanas.</S.TableData>
+            <S.TableData>
+              O plano oferece até 4 cortes, sendo 1 por semana, nas próximas 4
+              semanas.
+            </S.TableData>
             <S.TableData>R$ 75,00</S.TableData>
           </S.TableRow>
           <S.TableRow>
             <S.TableData>Plano Mensal - Corte + Barba</S.TableData>
-            <S.TableData>O plano oferece até 4 cortes e 4 barbas, sendo 1 corte+barba por semana, nas próximas 4 semanas.</S.TableData>
+            <S.TableData>
+              O plano oferece até 4 cortes e 4 barbas, sendo 1 corte+barba por
+              semana, nas próximas 4 semanas.
+            </S.TableData>
             <S.TableData>R$ 135,00</S.TableData>
           </S.TableRow>
         </S.TableBody>
       </S.PricesTable>
+      <S.Observation>
+        <p>
+          Observação: Para os planos mensais, o corte/barba deve ser feito
+          semanalmente, sem intervalos. Caso o cliente não faça o corte/barba em
+          uma semana, ele perde o direito ao corte/corte daquela semana.
+        </p>
+      </S.Observation>
     </S.PricesContainer>
   );
 };

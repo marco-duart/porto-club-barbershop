@@ -14,7 +14,7 @@ export const Title = styled(motion.h2)`
 
 // PRESENTATION
 export const PresentationContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -45,6 +45,10 @@ export const PresentationContainer = styled.div`
   > * {
     position: relative;
     z-index: 2;
+  }
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    height: 100vh;
   }
 `;
 
@@ -105,7 +109,7 @@ export const CallToActionButton = styled(motion.button)`
 
 // ABOUT
 export const AboutContainer = styled.div`
-  height: 88vh;
+  min-height: 88vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -114,6 +118,7 @@ export const AboutContainer = styled.div`
 
   @media (${CONSTANTS.DEVICE.tablet}) {
     flex-direction: row;
+    height: 88vh;
   }
 `;
 
@@ -198,7 +203,7 @@ export const Bio = styled.div`
 
 // PRICES
 export const PricesContainer = styled(motion.div)`
-  height: 88vh;
+  min-height: 88vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -227,6 +232,10 @@ export const PricesContainer = styled(motion.div)`
   > * {
     position: relative;
     z-index: 2;
+  }
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    height: 88vh;
   }
 `;
 
@@ -289,9 +298,34 @@ export const TableData = styled.td`
   }
 `;
 
+export const Observation = styled.div`
+  margin-top: 20px;
+  padding: 1rem;
+  width: 80%;
+  max-width: 1200px;
+  background: rgba(34, 34, 34, 0.8);
+  border: 2px solid #daa520;
+  border-radius: 5px;
+  color: ${({ theme }) => theme.colors.textLight || "#FFFFFF"};
+  font-size: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+`;
+
 // CONTACT
 export const ContactContainer = styled(motion.div)`
-  height: 88vh;
+  min-height: 88vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -300,6 +334,10 @@ export const ContactContainer = styled(motion.div)`
   background-color: ${(props) => props.theme.colors.backgroundSecondary};
   padding: 2rem 0;
   overflow: hidden;
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    height: 88vh;
+  }
 `;
 
 export const ContactContent = styled(motion.div)`
