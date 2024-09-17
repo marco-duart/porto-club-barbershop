@@ -8,18 +8,27 @@ export const HeaderContainer = styled.header<{ scrollPosition: number }>`
   width: 100%;
   height: 12vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 5%;
   background-color: ${(props) =>
     props.scrollPosition > 50 ? `rgba(31, 31, 31, 0.8)` : "transparent"};
   transition: background-color 0.3s ease-in-out;
   z-index: 1000;
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    justify-content: space-between;
+  }
 `;
 
 export const Logo = styled.img`
+  display: none;
   height: 85%;
   cursor: pointer;
+
+  @media (${CONSTANTS.DEVICE.tablet}) {
+    display: block;
+  }
 `;
 
 export const Nav = styled.nav`
