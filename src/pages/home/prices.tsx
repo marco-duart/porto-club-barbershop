@@ -55,18 +55,33 @@ const Prices = () => {
         <S.TableBody>
           <S.TableRow>
             <S.TableData>Corte</S.TableData>
-            <S.TableData>Corte básico</S.TableData>
-            <S.TableData>R$ 20,00</S.TableData>
+            <S.TableData></S.TableData>
+            <S.TableData>R$ 25,00</S.TableData>
           </S.TableRow>
           <S.TableRow>
-            <S.TableData>Corte</S.TableData>
-            <S.TableData>Corte básico</S.TableData>
-            <S.TableData>R$ 20,00</S.TableData>
+            <S.TableData>Barba</S.TableData>
+            <S.TableData></S.TableData>
+            <S.TableData>R$ 25,00</S.TableData>
           </S.TableRow>
           <S.TableRow>
-            <S.TableData>Corte</S.TableData>
-            <S.TableData>Corte básico</S.TableData>
-            <S.TableData>R$ 20,00</S.TableData>
+            <S.TableData>Alisamento</S.TableData>
+            <S.TableData></S.TableData>
+            <S.TableData>R$ 25,00</S.TableData>
+          </S.TableRow>
+          <S.TableRow>
+            <S.TableData>Sobrancelha</S.TableData>
+            <S.TableData></S.TableData>
+            <S.TableData>R$ 5,00</S.TableData>
+          </S.TableRow>
+          <S.TableRow>
+            <S.TableData>Plano Mensal - Corte</S.TableData>
+            <S.TableData>O plano oferece até 4 cortes, sendo 1 por semana, nas próximas 4 semanas.</S.TableData>
+            <S.TableData>R$ 75,00</S.TableData>
+          </S.TableRow>
+          <S.TableRow>
+            <S.TableData>Plano Mensal - Corte + Barba</S.TableData>
+            <S.TableData>O plano oferece até 4 cortes e 4 barbas, sendo 1 corte+barba por semana, nas próximas 4 semanas.</S.TableData>
+            <S.TableData>R$ 135,00</S.TableData>
           </S.TableRow>
         </S.TableBody>
       </S.PricesTable>
