@@ -44,5 +44,5 @@ export const LINKS = {
   facebook: "",
   linkedin: "",
   address: "R. Cuiabá, 2242 - Qd. 34, Lt. 04 - Jardim Esmeraldas, Goiânia - GO, 74830-050",
-  email: "",
+  email: "kaionascimento452@gmail.com",
 }
