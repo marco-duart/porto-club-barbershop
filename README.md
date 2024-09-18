@@ -1,51 +1,73 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Porto Club barbershop
 
-Currently, two official plugins are available:
+Este projeto implementa um website de barbearia com foco em uma interface responsiva, transições suaves e uma navegação interativa baseada em rolagem. A aplicação foi desenvolvida utilizando tecnologias modernas como **React**, **TypeScript**, **Styled Components**, **Framer Motion**, e **React Scroll**. O objetivo principal é oferecer uma experiência fluida e agradável aos usuários, com animações de entrada e efeitos de destaque na navegação conforme as seções do site são acessadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades Principais
 
-## Expanding the ESLint configuration
+- **Navegação fluida entre seções**: A navegação utiliza **React Scroll** para rolagem suave até as seções definidas do site. O destaque do menu na navegação é alterado automaticamente com base na seção visualizada.
+- **Tabela de Preços Animada**: Uma tabela de preços para os serviços da barbearia, que é exibida com animação quando entra na visualização do usuário.
+- **Efeitos visuais dinâmicos**: Inclui transições e animações usando **Framer Motion** para elementos como logotipos e botões, proporcionando uma experiência visual atraente.
+- **Responsividade**: A aplicação é responsiva e otimizada para funcionar em diferentes dispositivos, ajustando o layout para tamanhos de telas como tablets e smartphones.
+- **Efeito de Destaque no Menu**: O item correspondente no menu do header é destacado automaticamente conforme o usuário navega entre as seções do site, iniciando na seção "Home".
+- **Clip-path Customizado**: Efeito de clip-path estilizado para a imagem principal, criando uma forma de paralelogramo.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Biblioteca JavaScript para construção da interface.
+- **TypeScript**: Linguagem que adiciona tipagem estática ao JavaScript, tornando o desenvolvimento mais robusto.
+- **Styled Components**: Utilizado para criar componentes de estilo dinâmicos e reutilizáveis.
+- **Framer Motion**: Biblioteca utilizada para animações suaves de elementos React.
+- **React Scroll**: Para navegação suave entre as seções da página.
+- **Vercel**: Plataforma utilizada para o deploy do projeto.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Estrutura do Projeto
+
+A estrutura básica do projeto segue a convenção de um projeto React moderno com TypeScript, utilizando componentes funcionais e hooks para gerenciar o estado e os efeitos da aplicação.
+
+```
+/src
+  /assets
+    /styles
+    /images
+  /components
+    /base-layout
+    /footer
+    /header
+  /pages
+    /home
+  /utils
+    /constants
+    /helpers
+  App.tsx
+  index.tsx
+  ...
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Instalação Local
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/marco-duart/porto-club-barbershop.git
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# porto-club-barbershop
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Rode o projeto em ambiente de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+4. Para realizar o build de produção:
+   ```bash
+   npm run build
+   ```
+
+5. O projeto pode ser visualizado acessando `http://localhost:5173` no navegador.
+  
+## Licença
+
+Este projeto está licenciado sob a **Licença Apache 2.0**. Você pode ver os termos completos da licença no arquivo [LICENSE](./LICENSE.txt).
