@@ -41,7 +41,7 @@ const Presentation = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={buttonControls}
       >
-        <a href={CONSTANTS.LINKS.whatsapp}>Descubra mais</a>
+        <a href={CONSTANTS.LINKS.whatsapp}>Agende agora</a>
       </S.CallToActionButton>
     </S.PresentationContainer>
   );
