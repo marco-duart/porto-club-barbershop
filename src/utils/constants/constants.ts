@@ -1,11 +1,11 @@
-import logo from "../../assets/image/logo.png";
-import logoBlack from "../../assets/image/logo-black.png";
-import barbershop from "../../assets/image/barbershop.jpg";
-import background0 from "../../assets/image/background-0.jpg";
-import background1 from "../../assets/image/background-1.jpg";
-import background2 from "../../assets/image/background-2.jpg";
-import background3 from "../../assets/image/background-3.jpg";
-import background4 from "../../assets/image/background-4.jpg";
+import logo from "../../assets/images/logo.png";
+import logoBlack from "../../assets/images/logo-black.png";
+import barbershop from "../../assets/images/barbershop.jpg";
+import background0 from "../../assets/images/background-0.jpg";
+import background1 from "../../assets/images/background-1.jpg";
+import background2 from "../../assets/images/background-2.jpg";
+import background3 from "../../assets/images/background-3.jpg";
+import background4 from "../../assets/images/background-4.jpg";
 
 const SIZES = {
   mobileS: "320px",
